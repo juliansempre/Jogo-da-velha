@@ -1,0 +1,64 @@
+
+/*Esqueleto do jogo*/
+
+.jogo{
+  display:grid;
+  place-items:center;
+  align-items: center;
+  justify-content: center;
+}
+
+/*App.js*/
+body {
+  font: 34px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 74px;
+  font-weight: bold;
+  line-height: 84px;
+  height: 84px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 84px;
+}
+.square:hover{
+  background-color: rgb(230,230,230);
+}
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-over .square {
+  background: #ccc;
+}
+
+.game-info button {
+  background: #4CAF50;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
